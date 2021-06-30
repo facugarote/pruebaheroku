@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.get('/mostrar_mensaje', (req,res) =>{
+app.get('/', (req,res) =>{
     res.sendFile(path.resolve(__dirname, './views/index.html'));  // Permite enviar un archivo HTML
 });
 
